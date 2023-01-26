@@ -1,0 +1,13 @@
+<h2>Add a room</h2>
+<form action="/rooms/create" method="post">
+    <label for="name">Name: </label>
+    <input type="text" name="name" placeholder="big room" required="true">
+    <label for="description">description: </label>
+    <input type="text" name="description" placeholder="Very nice room" required="true">
+    <label for="imageUrl">Image Url: </label>
+    <input type="text" name="imageUrl" placeholder="coolimage.url" required="true">
+    <button type="submit">Log in</button>
+</form>
+{{#if error}}
+<p id="error">{{error}}</p>
+{{/if}}
